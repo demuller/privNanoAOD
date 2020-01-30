@@ -12,7 +12,7 @@ config.General.transferLogs = True
 
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'nano18_cfg.py'
+config.JobType.psetName = 'nano17_cfg.py'
 config.JobType.numCores = 2
 config.JobType.maxMemoryMB = 2500
 #config.JobType.outputFiles = ['lzma.root']
@@ -25,14 +25,11 @@ config.Data.inputDBS = 'global'
 config.Data.splitting = 'FileBased' 
 config.Data.unitsPerJob = 5
 #config.Data.totalUnits = 10000
-config.Data.outLFNDirBase = '/store/user/%s/top_nAODv5/2018/' % (getUsernameFromSiteDB())
+config.Data.outLFNDirBase = '/store/user/%s/top_nAODv5/2017/' % (getUsernameFromSiteDB())
 config.Data.publication = True
 config.Data.outputDatasetTag = 'TopNanoAODv5p1_2018'
 
 config.section_("Site")
-config.Site.storageSite = 'T1_DE_KIT_Disk'
+config.Site.storageSite = 'T2_CH_CERN'
 
-
-config.section_("User")
-config.User.voGroup = 'dcms'
 
