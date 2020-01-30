@@ -1,5 +1,5 @@
 # privNanoAOD
-How to privately produce nanoAOD samples
+How to privately produce nanoAODv5 samples
 
 ## Setting up the framework
 
