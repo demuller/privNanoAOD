@@ -12,7 +12,8 @@ config.General.transferLogs = True
 
 config.section_("JobType")
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'nano17_cfg.py'
+# X = 6, 7, or 8
+config.JobType.psetName = 'nano1X_cfg.py'
 config.JobType.numCores = 2
 config.JobType.maxMemoryMB = 2500
 #config.JobType.outputFiles = ['lzma.root']
@@ -25,9 +26,11 @@ config.Data.inputDBS = 'global'
 config.Data.splitting = 'FileBased' 
 config.Data.unitsPerJob = 5
 #config.Data.totalUnits = 10000
-config.Data.outLFNDirBase = '/store/user/%s/top_nAODv5/2017/' % (getUsernameFromSiteDB())
+# X = 6, 7, or 8
+config.Data.outLFNDirBase = '/store/user/%s/topNanoAOD/v5p1/201X/' % (getUsernameFromSiteDB())
 config.Data.publication = True
-config.Data.outputDatasetTag = 'TopNanoAODv5p1_2018'
+# X = 6, 7, or 8
+config.Data.outputDatasetTag = 'TopNanoAODv5p1_201X'
 
 config.section_("Site")
 config.Site.storageSite = 'T2_CH_CERN'
